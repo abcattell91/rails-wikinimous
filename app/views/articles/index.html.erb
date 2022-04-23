@@ -1,0 +1,8 @@
+<div class="container m-5 p-5 shadow p-3 mb-5 bg-white rounded">
+  <ul class="list-group">
+  <% @articles.each do |article| %>
+      <li class="list-group-item"><h5 class="text-center"><%= link_to article.title, article_path(article) %></h5>
+      <br><p class="article_content"><%= article.content %><p></li>
+  <% end %>
+  </ul>
+</div>

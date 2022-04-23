@@ -1,0 +1,8 @@
+<div class="m-5 p-5">
+  <h1 class="m-3 p-3"><%= @article.title %></h1>
+  <p class="shadow p-3 mb-5 bg-white rounded m-5 p-5"><%= @article.content %></p>
+
+  <button type="button" class="btn btn-info"><%= link_to 'BACK', articles_path %></button>
+  <button type="button" class="btn btn-info"><%= link_to 'EDIT', edit_article_path(@article) %></button>
+  <button type="button" class="btn btn-info"><%= link_to 'DELETE', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %></button>
+</div>
